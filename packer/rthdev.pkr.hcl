@@ -20,8 +20,8 @@ source "vmware-iso" "rthdev" {
   cpus = 4
   memory = 8192
   disk_size = 16000
-  disk_additional_size  = [32000]
-  disk_type_id = "0"   # for growable virtual disk contained in a single file (monolithic sparse)
+  disk_additional_size = [32000]
+  disk_type_id = "0" # for growable virtual disk contained in a single file (monolithic sparse)
   network_adapter_type = "vmxnet3"
 
   vmx_data = {
@@ -29,21 +29,24 @@ source "vmware-iso" "rthdev" {
     "hgfs.enabled" = "TRUE" # for shared folders
   }
 
-  # iso_url              = "https://cdimage.debian.org/debian-cd/13.3.0/amd64/iso-dvd/debian-13.3.0-amd64-DVD-1.iso"
-  iso_url              = "./debian-13.3.0-amd64-DVD-1.iso"
-  iso_checksum         = "file:https://cdimage.debian.org/debian-cd/13.3.0/amd64/iso-dvd/SHA256SUMS"
+  iso_url = "https://cdimage.debian.org/debian-cd/13.3.0/amd64/iso-dvd/debian-13.3.0-amd64-DVD-1.iso"
+  # Or
+  # iso_url = "http://127.0.0.1/debian-13.3.0-amd64-DVD-1.iso"
+  # Or
+  # iso_url = "./debian-13.3.0-amd64-DVD-1.iso"
+  iso_checksum = "file:https://cdimage.debian.org/debian-cd/13.3.0/amd64/iso-dvd/SHA256SUMS"
 
   # SSH settings
-  communicator           = "ssh"
-  ssh_username           = "vagrant"
-  ssh_password           = "vagrant"
-  ssh_timeout            = "30m"
+  communicator = "ssh"
+  ssh_username = "vagrant"
+  ssh_password = "vagrant"
+  ssh_timeout = "30m"
   ssh_handshake_attempts = 1000
 
   # Preseed settings
   http_directory = "http"
-  boot_wait      = "5s"
-  # install auto=true priority=critical hostname=rthdev domain=local preseed/url=http://192.168.153.1/preseed.txt 
+  boot_wait = "5s"
+  # install auto=true priority=critical hostname=rthdev domain=local preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.txt 
   boot_command = [
     "<esc><wait>",
     "install <wait>",
@@ -70,7 +73,7 @@ build {
   }
 
   provisioner "file" {
-    source      = "incus-init.yaml"
+    source = "incus-init.yaml"
     destination = "/tmp/incus-init.yaml"
   }
 
@@ -80,8 +83,8 @@ build {
   }
 
   post-processor "vagrant" {
-    output              = "rthdev-{{ .Provider }}.box"
-    provider_override   = "vmware"
+    output = "rthdev-{{ .Provider }}.box"
+    provider_override = "vmware"
     keep_input_artifact = false
   }
 }

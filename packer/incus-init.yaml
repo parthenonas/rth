@@ -2,7 +2,7 @@ storage_pools:
 - name: default
   driver: zfs
   config:
-    source: /dev/sda
+    source: /dev/sdb
 networks:
 - name: incusbr0
   type: bridge

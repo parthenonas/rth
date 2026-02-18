@@ -5,37 +5,46 @@ set -e
 # export http_proxy="http://<username>:<passwd>@<host>:<port>"
 # export https_proxy="http://<username>:<passwd>@<host>:<port>"
 
+export DEBIAN_FRONTEND=noninteractive
+
 # System upgrade
-sudo apt-get update
-sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y
+sudo apt-get update -qq
+sudo -E apt-get upgrade -y -qq
 
 # Basic packages installation
-sudo DEBIAN_FRONTEND=noninteractive apt-get install -y curl unzip git cpu-checker open-vm-tools linux-headers-amd64 build-essential pkg-config libssl-dev
+sudo -E apt-get install -y -qq curl unzip git cpu-checker open-vm-tools linux-headers-$(uname -r) build-essential pkg-config libssl-dev
 
 # ZFS installation
 echo "zfs-dkms zfs-dkms/note-check-binary bool true" | sudo debconf-set-selections
-sudo DEBIAN_FRONTEND=noninteractive apt-get install -y zfs-dkms zfsutils-linux
+sudo -E apt-get install -y -qq zfs-dkms zfsutils-linux
 
-# Open vSwitch and Incus installation
-sudo apt-get install -y openvswitch-switch incus
+# Open vSwitch installation
+sudo -E apt-get install -y -qq openvswitch-switch
+if ! getent group openvswitch >/dev/null; then
+    sudo groupadd --system openvswitch
+fi
+sudo chown root:openvswitch /var/run/openvswitch/db.sock 2>/dev/null || true
+sudo chmod 0660 /var/run/openvswitch/db.sock 2>/dev/null || true
+sudo systemctl restart openvswitch-switch 2>/dev/null || true
+
+# Incus installation
+sudo -E apt-get install -y -qq incus
 sudo incus admin init --preseed < /tmp/incus-init.yaml
 
 # Rust installation
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-source "$HOME/.cargo/env"
+export PATH="$HOME/.cargo/bin:$PATH"
 
-# fnm and Node.js installation
-curl -fsSL https://fnm.vercel.app | bash -s -- --skip-shell
+# fnm installation
+curl -fsSL https://fnm.vercel.app/install | bash
 export PATH="$HOME/.local/share/fnm:$PATH"
 eval "$(fnm env --use-on-cd)"
+
+# Node.js installation
 fnm install --lts
 
-
-echo 'export PATH="$HOME/.local/share/fnm:$PATH"' >> ~/.bashrc
-echo 'eval "$(fnm env --use-on-cd)"' >> ~/.bashrc
-
-sudo usermod -aG incus-admin,kvm,openvswitch,incus vagrant
+sudo usermod -aG incus-admin,kvm,openvswitch,incus $USER
 
 # Clean up
-sudo apt-get clean
+sudo -E apt-get clean
 sudo sync
