@@ -64,6 +64,20 @@ export default defineConfig({
                   },
                 ],
               },
+              {
+                text: "🎯 3 – Роутер на палочке",
+                link: "/3-routing/1-routers/3-roas",
+                items: [
+                  {
+                    text: "Инструкции",
+                    link: "/3-routing/1-routers/3-roas/manual",
+                  },
+                  {
+                    text: "Выводы",
+                    link: "/3-routing/1-routers/3-roas/key-takeaways",
+                  },
+                ],
+              },
             ],
           },
         ],
