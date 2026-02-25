@@ -78,6 +78,20 @@ export default defineConfig({
                   },
                 ],
               },
+              {
+                text: "🎯 4 – Коммутируемые виртуальные интерфейсы",
+                link: "/3-routing/1-routers/4-svi",
+                items: [
+                  {
+                    text: "Инструкции",
+                    link: "/3-routing/1-routers/4-svi/manual",
+                  },
+                  {
+                    text: "Выводы",
+                    link: "/3-routing/1-routers/4-svi/key-takeaways",
+                  },
+                ],
+              },
             ],
           },
         ],
