@@ -106,6 +106,20 @@ export default defineConfig({
                   },
                 ],
               },
+              {
+                text: "🎯 6 – Администрирование корпоративной сети Comb",
+                link: "/3-routing/1-routers/6-comb-static-routing",
+                items: [
+                  {
+                    text: "Инструкции",
+                    link: "/3-routing/1-routers/6-comb-static-routing/manual",
+                  },
+                  {
+                    text: "Выводы",
+                    link: "/3-routing/1-routers/6-comb-static-routing/key-takeaways",
+                  },
+                ],
+              },
             ],
           },
         ],
