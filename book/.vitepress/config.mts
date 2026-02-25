@@ -37,7 +37,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                text: "🎯 Объединение сетей маршрутизатором",
+                text: "🎯 1 – Объединение сетей маршрутизатором",
                 link: "/3-routing/1-routers/1-network-inerconnection",
                 items: [
                   {
@@ -51,7 +51,7 @@ export default defineConfig({
                 ],
               },
               {
-                text: "🎯 Статическая маршрутизация",
+                text: "🎯 2 – Статическая маршрутизация",
                 link: "/3-routing/1-routers/2-static-routing",
                 items: [
                   {
