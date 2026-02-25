@@ -92,6 +92,20 @@ export default defineConfig({
                   },
                 ],
               },
+              {
+                text: "🎯 5 – Маршрутизируемый порт",
+                link: "/3-routing/1-routers/5-routed-port",
+                items: [
+                  {
+                    text: "Инструкции",
+                    link: "/3-routing/1-routers/5-routed-port/manual",
+                  },
+                  {
+                    text: "Выводы",
+                    link: "/3-routing/1-routers/5-routed-port/key-takeaways",
+                  },
+                ],
+              },
             ],
           },
         ],
