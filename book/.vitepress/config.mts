@@ -39,6 +39,7 @@ export default defineConfig({
               {
                 text: "🎯 1 – Объединение сетей маршрутизатором",
                 link: "/3-routing/1-routers/1-network-inerconnection",
+                collapsed: true,
                 items: [
                   {
                     text: "Инструкции",
@@ -53,6 +54,7 @@ export default defineConfig({
               {
                 text: "🎯 2 – Статическая маршрутизация",
                 link: "/3-routing/1-routers/2-static-routing",
+                collapsed: true,
                 items: [
                   {
                     text: "Инструкции",
@@ -67,6 +69,7 @@ export default defineConfig({
               {
                 text: "🎯 3 – Роутер на палочке",
                 link: "/3-routing/1-routers/3-roas",
+                collapsed: true,
                 items: [
                   {
                     text: "Инструкции",
@@ -81,6 +84,7 @@ export default defineConfig({
               {
                 text: "🎯 4 – Коммутируемые виртуальные интерфейсы",
                 link: "/3-routing/1-routers/4-svi",
+                collapsed: true,
                 items: [
                   {
                     text: "Инструкции",
@@ -95,6 +99,7 @@ export default defineConfig({
               {
                 text: "🎯 5 – Маршрутизируемый порт",
                 link: "/3-routing/1-routers/5-routed-port",
+                collapsed: true,
                 items: [
                   {
                     text: "Инструкции",
@@ -109,6 +114,7 @@ export default defineConfig({
               {
                 text: "🎯 6 – Администрирование корпоративной сети Comb",
                 link: "/3-routing/1-routers/6-comb-static-routing",
+                collapsed: true,
                 items: [
                   {
                     text: "Инструкции",
