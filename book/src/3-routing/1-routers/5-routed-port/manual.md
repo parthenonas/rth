@@ -7,7 +7,7 @@
 
 Для запуска проекта в **GNS3** необходимо:
 
-- [↓ Загрузить файл проекта routed-port.gns3project](./routed-port.gns3project){download}
+- [↓ Загрузить файл проекта routed-port.gns3project](/3-routing/1-routers/5-routed-port/routed-port.gns3project){download}
 - Скопировать файл проекта `routed-port.gns3project` в виртуальную машину
 - Импортировать файл `routed-port.gns3project` в GNS3
 - Запустить все узлы проекта

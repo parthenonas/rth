@@ -7,7 +7,7 @@
 
 Для запуска проекта в **GNS3** необходимо:
 
-- [↓ Загрузить файл проекта roas.gns3project](./roas.gns3project){download}
+- [↓ Загрузить файл проекта roas.gns3project](/3-routing/1-routers/3-roas/roas.gns3project){download}
 - Скопировать файл проекта `roas.gns3project` в виртуальную машину
 - Импортировать файл `roas.gns3project` в GNS3
 - Запустить все узлы проекта
