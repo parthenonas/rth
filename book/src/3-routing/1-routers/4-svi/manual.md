@@ -7,7 +7,7 @@
 
 Для запуска проекта в **GNS3** необходимо:
 
-- [↓ Загрузить файл проекта svi.gns3project](./svi.gns3project){download}
+- [↓ Загрузить файл проекта svi.gns3project](/3-routing/1-routers/4-svi/svi.gns3project){download}
 - Скопировать файл проекта `svi.gns3project` в виртуальную машину
 - Импортировать файл `svi.gns3project` в GNS3
 - Запустить все узлы проекта

@@ -7,7 +7,7 @@
 
 Для запуска проекта в **GNS3** необходимо:
 
-- [↓ Загрузить файл проекта static-routing.gns3project](./static-routing.gns3project){download}
+- [↓ Загрузить файл проекта static-routing.gns3project](/3-routing/1-routers/2-static-routing/static-routing.gns3project){download}
 - Скопировать файл проекта `static-routing.gns3project` в виртуальную машину
 - Импортировать файл `static-routing.gns3project` в GNS3
 - Запустить все узлы проекта

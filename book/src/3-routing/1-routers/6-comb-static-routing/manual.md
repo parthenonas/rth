@@ -7,7 +7,7 @@
 
 Для запуска проекта в **GNS3** необходимо:
 
-- [↓ Загрузить файл проекта comb-static-routing.gns3project](./comb-static-routing.gns3project){download}
+- [↓ Загрузить файл проекта comb-static-routing.gns3project](/3-routing/1-routers/6-comb-static-routing/comb-static-routing.gns3project){download}
 - Скопировать файл проекта `comb-static-routing.gns3project` в виртуальную машину
 - Импортировать файл `comb-static-routing.gns3project` в GNS3
 - Запустить все узлы проекта
