@@ -128,6 +128,27 @@ export default defineConfig({
               },
             ],
           },
+          {
+            text: "Т3.2 – Динамическая маршрутизация",
+            collapsed: true,
+            items: [
+              {
+                text: "🎯 1 – OSPF для одной области",
+                link: "/3-routing/2-dynamic-routing/1-single-area-ospf",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Инструкции",
+                    link: "/3-routing/2-dynamic-routing/1-single-area-ospf/manual",
+                  },
+                  {
+                    text: "Выводы",
+                    link: "/3-routing/2-dynamic-routing/1-single-area-ospf/key-takeaways",
+                  },
+                ],
+              },
+            ]
+          }
         ],
       },
     ],
