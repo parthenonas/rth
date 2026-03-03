@@ -147,6 +147,21 @@ export default defineConfig({
                   },
                 ],
               },
+              {
+                text: "🎯 2 – Администрирование корпоративной сети Либра",
+                link: "/3-routing/2-dynamic-routing/2-libra-dynamic-routing",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Инструкции",
+                    link: "/3-routing/2-dynamic-routing/2-libra-dynamic-routing/manual",
+                  },
+                  {
+                    text: "Выводы",
+                    link: "/3-routing/2-dynamic-routing/2-libra-dynamic-routing/key-takeaways",
+                  },
+                ],
+              },
             ]
           }
         ],
