@@ -148,6 +148,21 @@ export default defineConfig({
                 ],
               },
               {
+                text: "🎯 2 – Администрирование корпоративной сети Либра",
+                link: "/3-routing/2-dynamic-routing/2-libra-dynamic-routing/",
+                collapsed: true,
+                items: [
+                  {
+                    text: "Инструкции",
+                    link: "/3-routing/2-dynamic-routing/2-libra-dynamic-routing/manual",
+                  },
+                  {
+                    text: "Выводы",
+                    link: "/3-routing/2-dynamic-routing/2-libra-dynamic-routing/manual",
+                  },
+                ],
+              },
+              {
                 text: "🎯 3 – OSPF для нескольких областей",
                 link: "/3-routing/2-dynamic-routing/3-multi-area-ospf/",
                 collapsed: true,
