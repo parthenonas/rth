@@ -7,11 +7,10 @@
 
 Для запуска проекта в **GNS3** необходимо:
 
-- [↓ Загрузить файл проекта single-area-ospf.gns3project](3-routing/2-dynamic-routing/1-single-area-ospf/single-area-ospf.gns3project){download}
-- Скопировать файл проекта `single-area-ospf.gns3project` в виртуальную машину
-- Импортировать файл `single-area-ospf.gns3project` в GNS3
+- [↓ Загрузить файл проекта multi-area-ospf.gns3project](3-routing/2-dynamic-routing/3-multi-area-ospf/multi-area-ospf.gns3project){download}
+- Скопировать файл проекта `multi-area-ospf.gns3project` в виртуальную машину
+- Импортировать файл `multi-area-ospf.gns3project` в GNS3
 - Запустить все узлы проекта
-
 
 ## Настройка устройств корпоративной сети
 
