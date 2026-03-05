@@ -1,9 +1,13 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "rthdev"
-  config.vm.provider "vmware_desktop" do |vb|
-    vb.cpus = 4
-    vb.memory = 8192
-    vb.vmx["vhv.enable"] = "TRUE"
+  
+  config.vm.provider "vmware_desktop" do |v|
+    v.cpus = 4
+    v.memory = 8192
+    v.vmx["vhv.enable"] = "TRUE"
+    # vagrant up --gui
+    v.gui = ARGV.include?("--gui")
+
   end
 
   config.vm.synced_folder ".", "/home/vagrant/rth",
