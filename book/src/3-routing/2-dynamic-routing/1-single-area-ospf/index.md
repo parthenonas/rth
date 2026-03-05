@@ -1,8 +1,5 @@
 ---
 title: OSPF для одной области
-next:
-  text: 'Инструкции'
-  link: '/3-routing/2-dynamic-routing/1-single-area-ospf/manual.md'
 ---
 
 # OSPF для одной области

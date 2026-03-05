@@ -1,8 +1,5 @@
 ---
 title: Объединение сетей маршрутизатором
-next:
-  text: 'Инструкции'
-  link: '/3-routing/1-routers/1-network-inerconnection/manual.md'
 ---
 
 # Объединение сетей маршрутизатором

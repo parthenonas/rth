@@ -1,8 +1,5 @@
 ---
 title: Администрирование корпоративной сети Comb
-next:
-  text: 'Инструкции'
-  link: '/3-routing/1-routers/6-comb-static-routing/manual.md'
 ---
 
 # Администрирование корпоративной сети Comb

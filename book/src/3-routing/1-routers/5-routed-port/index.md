@@ -1,8 +1,5 @@
 ---
 title: Маршрутизируемый порт
-next:
-  text: 'Инструкции'
-  link: '/3-routing/1-routers/5-routed-port/manual.md'
 ---
 
 # Маршрутизируемый порт

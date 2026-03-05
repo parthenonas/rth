@@ -1,8 +1,5 @@
 ---
 title: Администрирование корпоративной сети Либра
-next:
-  text: 'Инструкции'
-  link: '/3-routing/2-dynamic-routing/2-libra-dynamic-routing/manual.md'
 ---
 
 # Администрирование корпоративной сети Либра

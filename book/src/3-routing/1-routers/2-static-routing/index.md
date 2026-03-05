@@ -1,8 +1,5 @@
 ---
 title: Статическая маршрутизация
-next:
-  text: 'Инструкции'
-  link: '/3-routing/1-routers/2-static-routing/manual.md'
 ---
 
 # Статическая маршрутизация

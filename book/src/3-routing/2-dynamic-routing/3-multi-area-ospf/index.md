@@ -1,8 +1,5 @@
 ---
 title: OSPF для нескольких областей
-next:
-  text: 'Инструкции'
-  link: '3-routing/2-dynamic-routing/3-multi-area-ospf/manual.md'
 ---
 
 # OSPF для нескольких областей

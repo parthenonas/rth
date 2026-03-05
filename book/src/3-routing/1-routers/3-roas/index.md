@@ -1,8 +1,5 @@
 ---
 title: Роутер на палочке
-next:
-  text: 'Инструкции'
-  link: '/3-routing/1-routers/3-roas/manual.md'
 ---
 
 # Роутер на палочке
