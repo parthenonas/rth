@@ -9,24 +9,24 @@ export default defineConfig({
 
     sidebar: [
       { text: "Главная страница", link: "/" },
-      {
-        text: "Т1 – Основы сетей",
-        collapsed: false,
-        link: "/1-basics",
-        items: [
-          {
-            text: "Симулятор GNS3",
-            collapsed: true,
-            items: [
-              {
-                text: "Задание &ndash; Сеть хост-хост",
-                link: "/1-basics/gns3/host-to-host-network-iproute2",
-              },
-            ],
-          },
-        ],
-      },
-      { text: "Т2 – Коммутация" },
+      // {
+      //   text: "Т1 – Основы сетей",
+      //   collapsed: false,
+      //   link: "/1-basics",
+      //   items: [
+      //     {
+      //       text: "Симулятор GNS3",
+      //       collapsed: true,
+      //       items: [
+      //         {
+      //           text: "Задание &ndash; Сеть хост-хост",
+      //           link: "/1-basics/gns3/host-to-host-network-iproute2",
+      //         },
+      //       ],
+      //     },
+      //   ],
+      // },
+      // { text: "Т2 – Коммутация" },
       {
         text: "Т3 – Маршрутизация",
         collapsed: false,
@@ -38,7 +38,7 @@ export default defineConfig({
             items: [
               {
                 text: "🎯 1 – Объединение сетей маршрутизатором",
-                link: "/3-routing/1-routers/1-network-inerconnection",
+                link: "/3-routing/1-routers/1-network-inerconnection/",
                 collapsed: true,
                 items: [
                   {
@@ -53,7 +53,7 @@ export default defineConfig({
               },
               {
                 text: "🎯 2 – Статическая маршрутизация",
-                link: "/3-routing/1-routers/2-static-routing",
+                link: "/3-routing/1-routers/2-static-routing/",
                 collapsed: true,
                 items: [
                   {
@@ -68,7 +68,7 @@ export default defineConfig({
               },
               {
                 text: "🎯 3 – Роутер на палочке",
-                link: "/3-routing/1-routers/3-roas",
+                link: "/3-routing/1-routers/3-roas/",
                 collapsed: true,
                 items: [
                   {
@@ -83,7 +83,7 @@ export default defineConfig({
               },
               {
                 text: "🎯 4 – Коммутируемые виртуальные интерфейсы",
-                link: "/3-routing/1-routers/4-svi",
+                link: "/3-routing/1-routers/4-svi/",
                 collapsed: true,
                 items: [
                   {
@@ -98,7 +98,7 @@ export default defineConfig({
               },
               {
                 text: "🎯 5 – Маршрутизируемый порт",
-                link: "/3-routing/1-routers/5-routed-port",
+                link: "/3-routing/1-routers/5-routed-port/",
                 collapsed: true,
                 items: [
                   {
@@ -113,7 +113,7 @@ export default defineConfig({
               },
               {
                 text: "🎯 6 – Администрирование корпоративной сети Comb",
-                link: "/3-routing/1-routers/6-comb-static-routing",
+                link: "/3-routing/1-routers/6-comb-static-routing/",
                 collapsed: true,
                 items: [
                   {
@@ -134,7 +134,7 @@ export default defineConfig({
             items: [
               {
                 text: "🎯 1 – OSPF для одной области",
-                link: "/3-routing/2-dynamic-routing/1-single-area-ospf",
+                link: "/3-routing/2-dynamic-routing/1-single-area-ospf/",
                 collapsed: true,
                 items: [
                   {
@@ -158,7 +158,7 @@ export default defineConfig({
                   },
                   {
                     text: "Выводы",
-                    link: "/3-routing/2-dynamic-routing/2-libra-dynamic-routing/manual",
+                    link: "/3-routing/2-dynamic-routing/2-libra-dynamic-routing/key-takeaways",
                   },
                 ],
               },
