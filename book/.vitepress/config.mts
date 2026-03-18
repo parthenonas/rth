@@ -33,7 +33,8 @@ export default defineConfig({
         link: "/3-routing",
         items: [
           {
-            text: "Т3.1 – Настрока маршрутизаторов",
+            text: "Т3.1 – Основы маршрутизации",
+            link: "/3-routing/1-routers/",
             collapsed: true,
             items: [
               {
